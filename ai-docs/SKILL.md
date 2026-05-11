@@ -1,24 +1,20 @@
 ---
 name: ai-docs
 description: >
-  AI-first convention for inline TypeScript documentation (JSDoc) so other
-  AIs understand the code context **without prior conversation memory**.
-  Covers every code artifact: functions, classes, methods, components,
-  hooks, types, interfaces, enums, business-rule constants, module
-  barrels. Each artifact is documented as a mini-skill: what it does,
-  business rules with rationale + consequence, side effects, typed
-  errors, and cross-references to other docs/files. Minimum template
-  (What it does + Rules + Errors) with optional sections (Side effects,
-  References, History). **Principle 9 (CORE): editing code = updating
-  JSDoc in the SAME edit** — TS doesn't validate doc contents, only
-  compliance prevents doc rot. Stack-agnostic — works with any TS
-  framework, ORM, validator, or runtime. USE TO write or review
-  docstrings for any exported artifact; ALTER existing artifact
-  (workflow "editing documented code" with per-change-type review
-  checklist); establish AI-first convention in a new codebase; audit
-  existing codebase for doc rot, over-documentation, missing context.
-  DO NOT USE for external docs (README, product docs, changelog) or to
-  comment every trivial private helper (over-doc anti-pattern).
+  AI-first JSDoc convention so other AIs reading TypeScript code cold
+  understand business rules, side effects, errors, and decisions without
+  prior conversation. Covers functions, classes, components, hooks,
+  types, enums, business-rule constants. Each artifact is documented as
+  a mini-skill with sections: what it does, rules (with rationale and
+  consequence), typed errors, side effects, cross-references. Principle
+  9 (CORE) requires editing code and updating JSDoc in the SAME edit,
+  since TypeScript does not validate doc contents and only compliance
+  prevents doc rot. Stack-agnostic — works with any TS framework, ORM,
+  or validator. USE to write or review docstrings for exported
+  artifacts, edit existing code with same-edit doc update, establish
+  AI-first convention in a new codebase, audit for doc rot or missing
+  context. DO NOT USE for external docs (README, changelog) or to
+  comment trivial private helpers (over-doc anti-pattern).
 ---
 
 # AI-First Code Documentation
